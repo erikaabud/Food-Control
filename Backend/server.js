@@ -9,6 +9,9 @@ const estoqueRoutes = require('./routes/estoqueRoutes');
 const vendaRoutes = require('./routes/vendaRoutes');
 const clientesRoutes = require('./routes/clientesRoutes');
 const creditoRoutes = require('./routes/creditoRoutes');
+//vitor
+const relatorioRoutes = require('./routes/relatorioRoutes');
+
 
 const app = express();
 
@@ -27,6 +30,8 @@ app.use('/estoque', estoqueRoutes);
 app.use('/vendas', vendaRoutes);
 app.use('/clientes', clientesRoutes);
 app.use('/credito', creditoRoutes);
+//vitor
+app.use('/relatorios', relatorioRoutes);
 
 const PORT = process.env.PORT || 3000;
 
